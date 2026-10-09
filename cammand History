@@ -1,0 +1,59 @@
+937  cd /
+  938  ls
+  939  cd app
+  940  ls
+  941  clear
+  942  ls
+  943  pwd
+  944  wget -o https://download.sonatype.com/nexus/3/nexus-3.96.4-01-linux-x86_64.tar.gz
+  945  clear
+  946  wget -O https://download.sonatype.com/nexus/3/nexus-3.96.4-01-linux-x86_64.tar.gz
+  947  clear
+  948  https://download.sonatype.com/nexus/3/nexus-3.96.4-01-linux-x86_64.tar.gz
+  949  clear
+  950  wget -O nexus.tar.gz https://download.sonatype.com/nexus/3/latest-unix.tar.gz
+  951  wget -O https://download.sonatype.com/nexus/3/nexus-3.96.4-01-linux-x86_64.tar.gz
+  952  clear
+  953  cd ~
+  954  ls
+  955  cd Downloads/
+  956  clear
+  957  ls
+  958  cp nexus-3.96.4-01-linux-x86_64.tar.gz /app
+  959  clear
+  960  cd /app
+  961  ls
+  962  ls -l
+  963  clear
+  964  ls 
+  965  rm nexus.tar.gz 
+  966  clear
+  967  ls
+  968  tar -xvf nexus-3.96.4-01-linux-x86_64.tar.gz 
+  969  clear
+  970  ls
+  971  mv nexus-3.96.4-01 nexus
+  972  ls
+  973  adduser nexus
+  974  chown -R nexus:nexus /app/nexus
+  975  chown -R nexus:nexus /app/sonatype-work
+  976  clear
+  977  ls -l
+  978     clear
+  979  ls
+  980  cd nexus/
+  981  ls
+  982  cd bin/
+  983  clear
+  984  pwd
+  985  ls
+  986  vim nexus.rc
+  987  vi /etc/systemd/system/nexus.service
+  988  setenforce 0
+  989  systemctl daemon-reload
+  990  systemctl start nexus
+  991  systemctl status nexus
+  992  clear
+  993  ifconfig
+  994  clear
+  995  cat /app/sonatype-work/nexus3/admin.password
