@@ -1,0 +1,17 @@
+node {
+    sh '''
+    export JENKINS_NODE_COOKIE=dontkillme
+export BUILD_ID=dontkillme
+/app/tomcat/bin/shutdown.sh || true
+sleep 10
+
+rm -rf /app/tomcat/webapps/nexus-java/
+rm -rf /app/tomcat/webapps/nexus-java.war
+
+curl -u admin:pass@123 -o /app/tomcat/webapps/nexus-java.war "http://localhost:8081/repository/nexus-java/nexus-java/webapp/$VERSION/webapp-$VERSION.war" || true
+
+nohup /app/tomcat/bin/startup.sh
+
+sleep 10
+'''
+}
