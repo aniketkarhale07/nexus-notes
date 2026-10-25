@@ -1,0 +1,8 @@
+echo "Removing Old files"
+rm -rf /var/www/html/nexus-html1/*
+
+echo "Coying New files"
+cp * /var/www/html/nexus-html1
+
+echo "Archiving"
+tar -cf nexus-html-$VERSION.tar *
