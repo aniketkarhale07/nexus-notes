@@ -1,0 +1,96 @@
+  httpd -v
+  895  clear
+  896  cd /var/www/html
+  897  ls
+  898  systemctl status httpd
+  899  systemctl start httpd
+  900  systemctl status httpd
+  901  clear
+  902  nginx -v
+  903  yum remove nginx -y
+  904  clear
+  905  nginx -v
+  906  clear
+  907  systemctl status httpd
+  908  clear
+  909  systemctl enable httpd
+  910  clear
+  911  ls
+  912  ping google.com
+  913  clear
+  914  cd /app/tomcat/
+  915  ls
+  916  cd work/
+  917  l
+  918  ls
+  919  cd Catalina/
+  920  ls
+  921  cd localhost/
+  922  ls
+  923  clear
+  924  pwd
+  925  clear
+  926  cd ~
+  927  ls
+  928  clear
+  929  cd /var/www/html
+  930  ls
+  931  mkdir nexus-html1
+  932  ls
+  933  clear
+  934  ls -l
+  935  chown -R jenkins:jenkins nexus-html1/
+  936  clear
+  937  ls
+  938  clear
+  939  cd /var/lib/jenkins/
+  940  ls
+  941  cd workspace/
+  942  ls
+  943  clear
+  944  ls
+  945  clear
+  946  cd /var/www/html/
+  947  ls
+  948  cd nexus-html1/
+  949  ls
+  950  clear
+  951  ls
+  952  cd ..
+  953  ls
+  954  cd nexus-html1/
+  955  ls
+  956  clear
+  957  ls
+  958  mkdir nexus-html1
+  959  ls
+  960  clear
+  961  ls
+  962  ls -ls
+  963  chown -R jenkins:jenkins nexus-html1/
+  964  clear
+  965  ls
+  966  rm -rf nexus-html1/
+  967  ls
+  968  clear
+  969  ls
+  970  pwd
+  971  cd /var/lib/jenkins/workspace/
+  972  cd nexus-html1/
+  973  ls
+  974  clear
+  975  ls
+  976  ls -l
+  977  rm nexus-html1.tar 
+  978  clear
+  979  ls
+  980  pwd
+  981  clear
+  982  ls
+  983  LS
+  984  ls
+  985  ping google.com
+  986  clear
+  987  systemctl restart NetworkManager
+  988  clear
+  989  ping google.com
